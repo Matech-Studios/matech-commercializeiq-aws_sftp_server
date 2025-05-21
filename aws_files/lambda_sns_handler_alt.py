@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     client = boto3.client("sns")
 
     client.publish(
-        TargetArn="<<sns_topic_arn>>",
-        Message=f'File "{filepath}" has been uploaded to the SFTP server. Event: "{typeEvent}". File size: {size} bytes',
+        TargetArn="arn:aws:sns:us-east-2:841344318949:commercializeiq-transfer-service-sns",
+        Message=f'File "{filepath}" has been "{typeEvent}" (event). File size: {size} bytes',
         Subject="SFTP Upload Notification",
     )
