@@ -25,8 +25,10 @@
 
 ## to-do
 
-- [ ] SNS // Email Notifications
-- [ ]
+- [x] login
+- [x] users
+- [x] security for S3
+- [WIP] SNS // Email Notifications
 - [ ] Web Application Firewall // IP block
 - [ ]
 
